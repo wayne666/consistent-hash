@@ -11,6 +11,8 @@
 	$ go get github.com/WayneZhouChina/consistent-hash
 
 ## Usage
+	import "github.com/WayneZhouChina/consistent-hash"
+
 	c := ConsistentHash.New()
 	c.Add("stationA")
 	c.Add("stationB")
