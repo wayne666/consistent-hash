@@ -33,10 +33,11 @@ type ConsistentHash struct {
 	sync.RWMutex
 }
 
-func (c *ConsistentHash) New() {
-	c = new(ConsistentHash)
+func New() *ConsistentHash {
+	c := new(ConsistentHash)
 	c.replicas = 10
 	c.myHash = make(map[uint32]string)
+	return c
 }
 
 func (c *ConsistentHash) Add(station string) {
