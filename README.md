@@ -8,10 +8,10 @@
 
 ## Installation
 
-	$ go get github.com/WayneZhouChina/consistent-hash
+	$ go get github.com/wayne666/consistent-hash
 
 ## Usage
-	import "github.com/WayneZhouChina/consistent-hash"
+	import "github.com/wayne666/consistent-hash"
 
 	c := ConsistentHash.New()
 	c.Add("stationA")
